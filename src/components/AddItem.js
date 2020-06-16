@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 export default class AddItem extends Component {
   state = {
@@ -37,3 +38,6 @@ export default class AddItem extends Component {
     );
   }
 }
+AddItem.propTypes = {
+  enterItem: PropTypes.func.isRequired
+};
